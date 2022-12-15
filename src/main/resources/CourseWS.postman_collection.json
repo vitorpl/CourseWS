@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "e2529ef9-6b5b-4276-9fc7-069e501a855a",
+		"name": "CourseWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1672694"
+	},
+	"item": [
+		{
+			"name": "List of Courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coursews/services/courseservice/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coursews",
+						"services",
+						"courseservice",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Course by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/coursews/services/courseservice/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coursews",
+						"services",
+						"courseservice",
+						"courses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    <course>\r\n        <id>2</id>\r\n        <name>Spring Initial Concepts</name>\r\n        <price>8.0</price>\r\n        <rating>4</rating>\r\n        <taughtBy>Vitor Pastuch</taughtBy>\r\n    </course>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coursews/services/courseservice/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coursews",
+						"services",
+						"courseservice",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Course",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    <patient>\r\n        <id>124</id>\r\n        <name>Juclécio</name>\r\n    </patient>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resttest/services/patientservice/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resttest",
+						"services",
+						"patientservice",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    <patient>\r\n        <id>124</id>\r\n        <name>Juclécio</name>\r\n    </patient>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coursews/services/courseservice/courses/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coursews",
+						"services",
+						"courseservice",
+						"courses",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
