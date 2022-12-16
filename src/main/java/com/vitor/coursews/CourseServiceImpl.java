@@ -6,8 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import org.springframework.beans.BeanUtils;
@@ -15,8 +13,6 @@ import org.springframework.stereotype.Service;
 
 import com.vitor.coursews.model.Course;
 
-@Consumes("application/xml,application/json")
-@Produces("application/xml,application/json")
 @Service
 public class CourseServiceImpl implements CourseService {
 
